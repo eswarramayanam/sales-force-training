@@ -1,24 +1,30 @@
 
 Day 10 - Mini Project
+
 System Overview
+
 This mini project demonstrates a Customer Relationship Management (CRM) system built on the Salesforce platform. The system manages customer information, tracks interactions, automates business processes, and provides users with an efficient interface for managing customer data. The project integrates Salesforce objects, automation tools, Apex logic, and Lightning Web Components to deliver a complete business solution.
 
 CRM Concepts
+
 Customer Relationship Management (CRM) focuses on managing interactions between businesses and customers. Key CRM concepts implemented in this project include:
 
 Customer data management
-Lead and contact tracking
-Opportunity management
-Business process automation
-Customer engagement monitoring
-Data-driven decision making
-The CRM system helps improve productivity, customer satisfaction, and business efficiency.
+.Lead and contact tracking
+.Opportunity management
+.Business process automation
+.Customer engagement monitoring
+.Data-driven decision making
+.The CRM system helps improve productivity, customer satisfaction, and business efficiency.
 
 Data Model
+
 The project uses Salesforce standard and custom objects to store and manage information.
 
 Main Objects
+
 Account
+
 Stores company or customer organization details.
 
 Contact
@@ -35,7 +41,9 @@ One Account can have many Contacts.
 One Account can have many Opportunities.
 Contacts are linked to Accounts.
 Opportunities are associated with Accounts.
+
 Validation Rules
+
 Validation rules ensure data accuracy and consistency.
 
 Examples include:
@@ -48,6 +56,7 @@ Duplicate records are restricted where necessary.
 These validations help maintain high-quality data within the CRM system.
 
 Flows
+
 Salesforce Flows automate business processes without writing code.
 
 Implemented Flows
@@ -65,7 +74,9 @@ Benefits:
 Reduced manual effort
 Faster processing
 Improved consistency
+
 Apex Logic
+
 Apex is used for advanced business logic that cannot be handled through declarative tools alone.
 
 Key Functions
@@ -95,6 +106,7 @@ Displays successful operation messages.
 The UI is responsive, interactive, and user-friendly.
 
 Complete Data Flow
+
 User enters information through the LWC interface.
 Validation rules verify data accuracy.
 Salesforce Flow automates standard business processes.
@@ -105,4 +117,5 @@ Notifications and automated actions are triggered when required.
 This workflow ensures seamless communication between the frontend and backend components of the system.
 
 Reflection
+
 This mini project provided practical experience in building a complete Salesforce CRM solution. I learned how data is managed through objects and relationships, how validation rules maintain data quality, and how Flows automate business processes. I also gained experience using Apex for advanced functionality and Lightning Web Components for creating interactive user interfaces. The project strengthened my understanding of Salesforce architecture, CRM concepts, automation, and full-system data flow, making it a valuable hands-on learning experience.
