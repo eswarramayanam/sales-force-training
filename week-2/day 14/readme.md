@@ -1,129 +1,95 @@
+# Day 14 - Flow Governance
 
-# Day 13 - DevOps and CI/CD
+## Approval Workflow Examples
 
-## What is CI/CD?
+Approval workflows help organizations control business processes by requiring authorization before specific actions are completed.
 
-CI/CD stands for Continuous Integration and Continuous Deployment (or Continuous Delivery). It is a modern software development practice that automates the process of building, testing, and deploying applications.
+### Example 1: Leave Request Approval
 
-### Continuous Integration (CI)
+1. Employee submits a leave request.
+2. Manager reviews the request.
+3. Manager approves or rejects the request.
+4. Employee receives a notification of the decision.
 
-Developers frequently merge code changes into a shared repository where automated tests verify the quality of the code.
+### Example 2: Expense Reimbursement Approval
 
-### Continuous Deployment/Delivery (CD)
+1. Employee submits an expense report.
+2. Finance team reviews submitted expenses.
+3. Approval is granted if expenses meet company policies.
+4. Reimbursement is processed.
 
-After successful testing, changes are automatically or semi-automatically deployed to higher environments and eventually to production.
+### Example 3: Opportunity Discount Approval
 
-CI/CD helps organizations release software faster, more reliably, and with fewer errors.
-
----
-
-## Why Deployment Workflow Matters
-
-A well-defined deployment workflow ensures that software changes move through development, testing, and production environments in a controlled manner.
-
-Benefits include:
-
-* Improved software quality
-* Faster release cycles
-* Reduced deployment errors
-* Better collaboration among teams
-* Easier troubleshooting and rollback
-* Consistent deployment processes
-
-Without a structured workflow, organizations may face frequent deployment failures and production issues.
+1. Sales representative requests a discount.
+2. Manager reviews the discount percentage.
+3. Approval is required for discounts above a defined threshold.
+4. Opportunity proceeds after approval.
 
 ---
 
-## Problems Without Version Control
+## Branching Flow Logic
 
-Version control systems such as Git help teams manage source code effectively. Without version control, teams may experience:
+Branching logic allows a Salesforce Flow to make decisions based on specific conditions.
 
-### Lost Code Changes
+### Example
 
-Developers may accidentally overwrite each other's work.
+A customer support flow may follow different paths:
 
-### No Change History
+* If Priority = High → Escalate case immediately.
+* If Priority = Medium → Assign to support team.
+* If Priority = Low → Add to standard processing queue.
 
-Tracking who made specific changes becomes difficult.
+### Benefits of Branching Logic
 
-### Difficult Collaboration
+* Automates decision-making.
+* Reduces manual intervention.
+* Improves process efficiency.
+* Ensures consistent business rule enforcement.
 
-Multiple developers working on the same project can create confusion.
-
-### Risky Deployments
-
-Untracked changes may be deployed to production.
-
-### Recovery Challenges
-
-Rolling back to previous versions becomes nearly impossible.
-
-Version control is essential for maintaining code quality and project stability.
+Decision elements in Salesforce Flows enable these branching paths.
 
 ---
 
-## GitHub + DX + DevOps Explanation
+## Governance Explanation
 
-Salesforce development benefits greatly from combining GitHub, Salesforce DX, and DevOps practices.
+Governance refers to the policies, standards, and controls that ensure Salesforce applications are developed and maintained consistently.
 
-### GitHub
+### Key Governance Principles
 
-Provides source control, branching, code reviews, and collaboration.
+#### Standardization
 
-### Salesforce DX
+Establishing common development and deployment practices.
 
-Offers modern development tools such as scratch orgs, source-driven development, and Salesforce CLI.
+#### Security
 
-### DevOps
+Protecting data through access controls and permissions.
 
-Automates testing, validation, integration, and deployment processes.
+#### Compliance
 
-### Combined Workflow
+Ensuring business processes follow regulatory and organizational requirements.
 
-1. Developers create feature branches in GitHub.
-2. Development is performed using Salesforce DX and scratch orgs.
-3. Changes are committed and pushed to GitHub.
-4. Pull requests are reviewed and approved.
-5. Automated CI/CD pipelines run tests and validations.
-6. Successful builds are deployed to higher environments.
-7. Approved releases are deployed to production.
+#### Change Management
 
-This integrated approach improves productivity, quality, and deployment reliability.
+Tracking and reviewing modifications before deployment.
 
----
+#### Documentation
 
-## Enterprise Deployment Risks
+Maintaining clear records of processes, configurations, and system changes.
 
-Large organizations face several deployment risks:
+### Importance of Governance
 
-### Incomplete Testing
+Good governance helps organizations:
 
-Undetected bugs can reach production.
+* Reduce operational risks.
+* Improve system reliability.
+* Maintain data quality.
+* Support regulatory compliance.
+* Enable scalable growth.
 
-### Configuration Errors
-
-Incorrect settings may break application functionality.
-
-### Data Integrity Issues
-
-Deployments can affect existing business data.
-
-### Security Risks
-
-Poorly reviewed code may introduce vulnerabilities.
-
-### Failed Releases
-
-Deployment failures can impact business operations.
-
-### Lack of Rollback Plans
-
-Recovering from unsuccessful deployments can be difficult.
-
-CI/CD pipelines help reduce these risks through automation, testing, and governance processes.
+Governance ensures that Salesforce solutions remain secure, manageable, and aligned with business objectives.
 
 ---
 
 ## Reflection
 
-This activity helped me understand the importance of DevOps and CI/CD in modern Salesforce development. I learned how automated testing and deployment workflows improve software quality and reduce manual effort. I also explored the role of GitHub for version control, Salesforce DX for development, and DevOps practices for enterprise deployments. Understanding deployment risks and mitigation strategies has strengthened my knowledge of professional software delivery processes and enterprise Salesforce development.
+This activity helped me understand how approval workflows automate business decision processes and how branching logic allows Salesforce Flows to respond dynamically to different conditions. I also learned the importance of governance in managing Salesforce applications through standards, security, compliance, and change management practices. Understanding these concepts has improved my knowledge of building reliable, controlled, and scalable business solutions within Salesforce.
